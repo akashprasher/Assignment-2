@@ -21,7 +21,7 @@
             <div class="container">
                 <a href="index.html" class="navbar-brand">
                     <img
-                        src="./assets/logo.svg"
+                        src="./assets/logo.png"
                         width="auto"
                         height="35px"
                         alt=""
@@ -52,12 +52,243 @@
                             <a href="#team" class="nav-link">Team</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#contact" class="nav-link">Contact</a>
+                            <a href="#our-data" class="nav-link">Our Data</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#form-validation" class="nav-link"
+                                >Validation</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a href="#time" class="nav-link">Time</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
+        <main>
+            <section id="section-hero">
+                <div id="hero" class="container">
+                    <div class="row flex-column-reverse flex-md-row">
+                        <div class="col-sm-6 text-vertical m-text-center">
+                            <h2 class="font-weight-bold">We Love to</h2>
+                            <h1 class="font-weight-bold">Organize Stuff.</h1>
+                            <a href="#contact"
+                                ><button class="btn btn-primary mt-4">
+                                    Sign Up, Today!
+                                </button></a
+                            >
+                        </div>
+                        <div class="col-sm-6 text-vertical">
+                            <img
+                                class="img-fluid"
+                                src="./assets/hero-banner.jpg"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section-one">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 text-vertical">
+                            <img
+                                class="round-corners img-fluid p-5"
+                                src="./assets/organize.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="col-sm-6 text-vertical m-text-center">
+                            <h3 class="font-weight-bold heading-color mb-3">
+                                How we Organize?
+                            </h3>
+                            <p class="text-justify">
+                                Organized people don’t waste time. They
+                                recognize that keeping things organized goes
+                                hand-in-hand with staying productive. They make
+                                and keep schedules for the day and week. They
+                                make deadlines and set goals. And most
+                                importantly, they and stick to them! Similarly,
+                                by living a cluttered lifestyle, you will not
+                                have the time or space to make your deadlines or
+                                achieve your goals.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="team" class="team-section">
+                <div class="container">
+                    <h3 class="text-center p-3 font-weight-bold">
+                        Meet Our Team!
+                    </h3>
+                </div>
+                <div class="container">
+                    <div id="slideshow">
+                        <div class="row p-3">
+                            <div class="col-sm">
+                                <img
+                                    class="img-fluid avt"
+                                    src="assets/avt/avt-1.jpg"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="col-sm text-vertical">
+                                <h3 class="text-center">Noah Wiils</h3>
+                                <p class="text-center">
+                                    Founder and CEO - Logo
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row p-3 flex-column-reverse flex-md-row">
+                            <div class="col-sm text-vertical">
+                                <h3 class="text-center">Oliver Cathay</h3>
+                                <p class="text-center">Co-Founder - Logo</p>
+                            </div>
+                            <div class="col-sm">
+                                <img
+                                    class="img-fluid avt"
+                                    src="assets/avt/avt-2.jpg"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="our-data" class="mt-5">
+                <div class="container">
+                    <div>
+                        <h3 class="text-center p-3 font-weight-bold">
+                            Our Data
+                        </h3>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Firstname</th>
+                                    <th>Lastname</th>
+                                    <th>Fullname</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td class="f-name">Tony</td>
+                                    <td class="l-name">Blair</td>
+                                    <td id="fname"></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td class="f-name">Kalpana</td>
+                                    <td class="l-name">Chawla</td>
+                                    <td id="fname"></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td class="f-name">Barack</td>
+                                    <td class="l-name">Obama</td>
+                                    <td id="fname"></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td class="f-name">John</td>
+                                    <td class="l-name">Mccain</td>
+                                    <td id="fname"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="text-center mb-4">
+                        <button id="rmOdd" class="btn btn-primary mt-4">
+                            Remove Odd Coloumns
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section id="form-validation">
+                <div class="container mt-5">
+                    <div>
+                        <h3 class="text-center p-3 font-weight-bold">
+                            Let's Validate and Oraganize.
+                        </h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img
+                                class="round-corners img-fluid p-5"
+                                src="./assets/validation.jpg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="col-sm-6 text-vertical">
+                            <div>
+                                <form id="formCheck">
+                                    <div class="form-group">
+                                        <label
+                                            >Enter Your String for
+                                            validation</label
+                                        >
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="regex_input"
+                                            name="regex_input"
+                                            placeholder="Aaerdxcvx@"
+                                        />
+                                    </div>
+                                    <div class="pb-3">
+                                        <small id="inst" class="text-muted"
+                                            >Should contain a uppercase &
+                                        </small>
+                                        <small id="inst" class="text-muted"
+                                            >Should contain a lowercase &
+                                        </small>
+                                        <small id="inst" class="text-muted"
+                                            >Should be atleast 10 character in
+                                            length &
+                                        </small>
+                                        <small id="inst" class="text-muted"
+                                            >Should have @ symbol in the
+                                            end</small
+                                        >
+                                    </div>
+                                    <div class="pb-3">
+                                        <small
+                                            >You'll Automatically get an Alert
+                                            when you satisfy the above
+                                            Conditions</small
+                                        >
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="time" class="mb-5 mt-5">
+                <div class="container text-center">
+                    <h3 class="font-weight-bold">
+                        We Folow Time For Better Management
+                    </h3>
+                    <p>Here we have a clock, follow it to get success!</p>
+                </div>
+                <div class="container text-center">
+                    <div class="digital-clock font-weight-bold">00:00:00</div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container text-center">
+                <p class="lead m-0">© Organize Inc.</p>
+            </div>
+        </footer>
+
         <script
             src="https://kit.fontawesome.com/425ce35459.js"
             crossorigin="anonymous"
