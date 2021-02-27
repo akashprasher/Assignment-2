@@ -100,6 +100,7 @@ function clockUpdate() {
     var h = addZero(twelveHour(date.getHours()));
     var m = addZero(date.getMinutes());
     var s = addZero(date.getSeconds());
+    var ampm = date.getHours() >= 12 ? "PM" : "AM";
 
-    $(".digital-clock").text(h + ":" + m + ":" + s);
+    $(".digital-clock").text(h + ":" + m + ":" + s + " " + ampm);
 }
