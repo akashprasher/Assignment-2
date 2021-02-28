@@ -46,6 +46,7 @@ $("#inputString").keyup(function () {
         var isLen = false;
 
         if (inputString.length > 0) {
+            $("#messages").show();
             if (regUpper.test(inputString)) {
                 $("#isUpper").css("color", "green");
                 isUpper = true;
@@ -84,11 +85,13 @@ $("#inputString").keyup(function () {
                 $("#emsg").hide();
             }
         } else {
-            $("#isUpper").css("color", "black");
-            $("#isLower").css("color", "black");
-            $("#isAt").css("color", "black");
-            $("#isLen").css("color", "black");
-            $("#emsg").hide();
+            // $("#isUpper").css("color", "black");
+            // $("#isLower").css("color", "black");
+            // $("#isAt").css("color", "black");
+            // $("#isLen").css("color", "black");
+            // $("#emsg").hide();
+            console.log("HAPPY FACES");
+            $("#messages").hide();
         }
     }
 });
