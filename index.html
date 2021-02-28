@@ -236,33 +236,36 @@
                                         <input
                                             type="text"
                                             class="form-control"
-                                            id="regex_input"
-                                            name="regex_input"
+                                            id="inputString"
+                                            name="inputString"
                                             placeholder="Aaerdxcvx@"
+                                            autocomplete="off"
                                         />
                                     </div>
                                     <div class="pb-3">
-                                        <small id="inst" class="text-muted"
-                                            >Should contain a uppercase &
-                                        </small>
-                                        <small id="inst" class="text-muted"
-                                            >Should contain a lowercase &
-                                        </small>
-                                        <small id="inst" class="text-muted"
+                                        <small id="isUpper" class=""
+                                            >Should contain a uppercase </small
+                                        ><br />
+                                        <small id="isLower" class=""
+                                            >Should contain a lowercase </small
+                                        ><br />
+                                        <small id="isLen" class=""
                                             >Should be atleast 10 character in
-                                            length &
-                                        </small>
-                                        <small id="inst" class="text-muted"
+                                            length </small
+                                        ><br />
+                                        <small id="isAt" class=""
                                             >Should have @ symbol in the
                                             end</small
                                         >
                                     </div>
-                                    <div class="pb-3">
-                                        <small
-                                            >You'll Automatically get an Alert
-                                            when you satisfy the above
-                                            Conditions</small
+                                    <div id="emsg" style="display: none">
+                                        <button
+                                            type="button"
+                                            class="btn btn-success"
+                                            disabled
                                         >
+                                            Success
+                                        </button>
                                     </div>
                                 </form>
                             </div>

@@ -28,44 +28,69 @@ $(document).ready(function () {
     });
 });
 
-// Form validation
-$(document).ready(function () {
-    var message = "Please Follow the Guidline";
+// Form Validation Below
 
-    $("#regex_input").keyup(function () {
-        var regValue = $(this).val();
-        i = 0;
-        isUpper = 0;
-        isLower = 0;
-        isAtLast = 0;
-        while (i <= regValue.length) {
-            character = regValue.charAt(i);
-            if (character == character.toUpperCase()) {
-                isUpper++;
-                // alert("upper case true");
+// Regex for VAlidation: ^[a-z|A-Z]+@    --- Important
+var regexPattern = /[a-z|A-Z]+@/;
+$("#inputString").keyup(function () {
+    // var regexPattern = /[a-z|A-Z]+@/;
+    var inputString = $("#inputString").val();
+    var isRegTrue = checkReg(inputString);
+    // console.log(isRegTrue);
+    function checkReg(inputString) {
+        var regUpper = /[A-Z]/;
+        var regLower = /[a-z]/;
+        var isUpper = false;
+        var isLower = false;
+        var isAt = false;
+        var isLen = false;
+
+        if (inputString.length > 0) {
+            if (regUpper.test(inputString)) {
+                $("#isUpper").css("color", "green");
+                isUpper = true;
+            } else {
+                $("#isUpper").css("color", "red");
+                isUpper = false;
             }
-            if (character == character.toLowerCase()) {
-                isLower++;
-                // alert("lower case true");
+
+            if (regLower.test(inputString)) {
+                $("#isLower").css("color", "green");
+                isLower = true;
+            } else {
+                $("#isLower").css("color", "red");
+                isLower = false;
             }
-            if (regValue.charAt(regValue.length - 1) == "@") {
-                isAtLast++;
+
+            if (inputString.charAt(inputString.length - 1) == "@") {
+                $("#isAt").css("color", "green");
+                isAt = true;
+            } else {
+                $("#isAt").css("color", "red");
+                isAt = false;
             }
-            i++;
-        }
-        if (regValue.length >= 10) {
-            if (isUpper > 0 && isLower && isAtLast) {
-                message = "Validated";
-                alert("Validated");
+
+            if (inputString.length >= 10) {
+                $("#isLen").css("color", "green");
+                isLen = true;
+            } else {
+                $("#isLen").css("color", "red");
+                isLen = false;
+            }
+
+            if (isUpper && isLower && isAt && isLen) {
+                $("#emsg").show();
+            } else {
+                $("#emsg").hide();
             }
         } else {
-            console.log("len");
+            $("#isUpper").css("color", "black");
+            $("#isLower").css("color", "black");
+            $("#isAt").css("color", "black");
+            $("#isLen").css("color", "black");
+            $("#emsg").hide();
         }
-        // console.log(message);
-    });
-    // $(this).find("#regMsg").html(message);
-
-    // console.log(message);
+    }
 });
 
 //  Clock below

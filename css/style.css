@@ -37,6 +37,10 @@ a.nav-link:hover {
     background-color: #007bff9c !important;
 }
 
+.btn-success {
+    width: 100%;
+}
+
 .navbar-light .navbar-nav .nav-link.active {
     color: #007cff;
 }
