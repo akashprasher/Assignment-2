@@ -47,6 +47,7 @@ $("#inputString").keyup(function () {
 
         if (inputString.length > 0) {
             $("#messages").show();
+            $("#caution").hide();
             if (regUpper.test(inputString)) {
                 $("#isUpper").css("color", "green");
                 isUpper = true;
@@ -90,6 +91,7 @@ $("#inputString").keyup(function () {
             // $("#isLower").css("color", "black");
             // $("#isAt").css("color", "black");
             // $("#isLen").css("color", "black");
+            $("#caution").show();
             $("#messages").hide();
             $("#emsg").hide();
         }
