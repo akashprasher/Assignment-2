@@ -85,13 +85,13 @@ $("#inputString").keyup(function () {
                 $("#emsg").hide();
             }
         } else {
+            // Commented Part can be used if want to display INSTRUCTION always
             // $("#isUpper").css("color", "black");
             // $("#isLower").css("color", "black");
             // $("#isAt").css("color", "black");
             // $("#isLen").css("color", "black");
-            // $("#emsg").hide();
-            console.log("HAPPY FACES");
             $("#messages").hide();
+            $("#emsg").hide();
         }
     }
 });
@@ -131,4 +131,15 @@ function clockUpdate() {
     var ampm = date.getHours() >= 12 ? "PM" : "AM";
 
     $(".digital-clock").text(h + ":" + m + ":" + s + " " + ampm);
+}
+
+// ASCII ART Text
+var art = ["( ͡⚈‿‿ ͡⚈)", "( ⚈ ₒ ⚈ )"];
+
+for (var i = 0; i < 10; i++) {
+    if (i % 2 == 0) {
+        console.log(art[0]);
+    } else {
+        console.log(art[1]);
+    }
 }
